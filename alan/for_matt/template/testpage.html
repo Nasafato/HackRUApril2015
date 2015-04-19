@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneApp | Welcome</title>
+  <link rel="stylesheet" href="css/foundation.css"/>
+  <link rel="stylesheet" href="css/test.css"/>
+  <script src="js/vendor/modernizr.js"></script>
+</head>
+
+<body>
+  <div class="body-block-container">
+
+    <div id="auth-container">
+      <h3>Log in to your account</h3>
+      <div class="row full-width">
+        <div class="box-container ">
+          <div id="box-login" class="boxed dimmed">
+            <div class="overlay">
+              <h4>I Have An Account</h4>
+            </div>
+            <div class="contents">
+              <h4>Log in to Your Account</h4>
+
+              <form id="login-form" method="post" action="/login" data-abide="data-abide" novalidate="novalidate"><input type="hidden" name="_xsrf" value="2|285b0991|25fbe95f08754eddec9a853a0ed744ee|1429411567">
+
+                <div data-mailcheck-container="data-mailcheck-container" class="input-wrapper">
+                  <label for="email">Email Address</label>
+                  <input id="login-email" type="email" name="email" placeholder="Email Address" value=""><small class="mailcheck-error" style="display: none;">Did you mean&nbsp;<a class="suggestion"></a>?</small><small class="error">Please enter an email address.</small>
+                </div>
+                <div class="input-wrapper">
+                  <label for="password">Password</label>
+                  <input id="login-password" type="password" name="password" placeholder="Password" class="password" value=""><small class="error">Please enter a password.</small>
+                </div>
+                <div class="show-password-group">
+                  <input id="show-password-login" type="checkbox" name="show_password_login" class="ignored show-password">
+                  <label for="show-password-login" class="checkbox">Show Password</label>
+                </div>
+                <div class="forgot-password-group"><a href="#forgot" class="js-toggle-forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="small button">Continue</button>
+              </form>
+
+              <div id="forgot-password-module" style="display: none;" class="">
+
+                <div class="capture__wrapper">
+                  <div class="capture__close js-toggle-forgot-password">×</div>
+                  <div class="capture__body">
+                    <div class="capture__copy">
+
+                      <h1 class="capture__headline">Forgot your password</h1>
+                      <div class="capture__description">Enter your email address and we will get you a new password immediately.
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <form novalidate="" class="capture__form">
+                    <input type="text" required="required" name="email" class="capture__input">
+                    <label alt="Your email" class="capture__placeholder">Your email</label>
+                    <button class="capture__submit">
+                      <div class="capture__submit__arrow"><i class="fat-arrow fat-arrow--next fat-arrow--white fat-arrow--shadow"></i>
+                      </div>
+                      <div class="capture__submit__text">Continue</div>
+                      <div class="capture__submit__loading hide"><i class="circle-loader"></i>
+                      </div>
+                    </button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="show-register"><a>I'm a new customer &gt;</a>
+          </div>
+          <div id="box-register" class="boxed dimmed">
+            <div class="overlay">
+              <h4>Create An Account</h4>
+            </div>
+            <div class="contents">
+              <h4>Create New Account</h4>
+
+              <form id="register-form" method="post" action="/register" data-abide="" novalidate="novalidate"><input type="hidden" name="_xsrf" value="2|285b0991|25fbe95f08754eddec9a853a0ed744ee|1429411567">
+
+                <div class="input-wrapper">
+                  <label for="first_name">First Name</label>
+                  <input id="register-first-name" type="text" name="first_name" placeholder="First Name" maxlength="200" required="required" value=""><small class="error">Please enter a first name.</small>
+                </div>
+                <div class="input-wrapper">
+                  <label for="last_name">Last Name</label>
+                  <input id="register-last-name" type="text" name="last_name" placeholder="Last Name" maxlength="200" required="required" value=""><small class="error">Please enter a last name.</small>
+                </div>
+                <div data-mailcheck-container="data-mailcheck-container" class="input-wrapper">
+                  <label for="email">Email Address</label>
+                  <input id="register-email" type="email" name="email" placeholder="Email Address" required="required" value=""><small class="mailcheck-error">Did you mean&nbsp;<a class="suggestion"></a>?</small><small class="error">Please enter an email address.</small>
+                </div>
+                <div class="input-wrapper">
+                  <label for="password">Password</label>
+                  <input id="register-password" type="password" name="password" placeholder="password" required="required" class="password" value=""><small class="error">Please enter a password.</small>
+                </div>
+                <div class="show-password-group">
+                  <input id="register-show-password" type="checkbox" name="show_password_register" class="ignored show-password">
+                  <label for="register-show-password" class="checkbox">Show Password</label>
+                </div>
+                <div class="subscribe-group">
+                  <input id="register-receive-emails" type="checkbox" name="wants_marketing_emails" checked="checked" value="1" class="ignored">
+                  <label for="register-receive-emails" class="checkbox">Receive Emails From Warby Parker</label>
+                </div>
+                <button type="submit" class="small button">Create My Account</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/fastclick.js"></script>
+  <script src="js/foundation/foundation.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/sendpassword.js"></script>
+
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>

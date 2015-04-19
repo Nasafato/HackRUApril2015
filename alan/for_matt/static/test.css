@@ -1,0 +1,324 @@
+.box-container {
+   position: relative;
+   z-index: 200;
+   width: 100%;
+   max-width: 100rem;
+   margin: 0 auto;
+   background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: 'Utopia','Georgia',serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #45555f;
+  text-rendering: optimizeLegibility;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+body {
+   background: #fff;
+   color: #45555f;
+   padding: 0;
+   margin: 0;
+   font-family: 'Proxima','ProximaNova','Helvetica','Verdana',sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   line-height: 1;
+   position: relative;
+   cursor: default;
+}
+#auth-container {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left;
+  *zoom: 1;
+  float: none;
+}
+
+#auth-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#auth-container .forgot-password-contents h6 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00a2e1;
+}
+
+#auth-container .forgot-password-contents p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
+  font-size: 0.75rem;
+}
+
+#auth-container .forgot-password-contents button.button {
+  margin-bottom: 0;
+}
+
+#auth-container [data-abide] .error small.error, #auth-container [data-abide] span.error,
+#auth-container [data-abide] small.error {
+  padding: 0;
+  margin-top: -8px;
+  margin-bottom: 0.5rem;
+  background: none;
+  line-height: 1rem;
+  font-style: normal;
+}
+
+#auth-container h3 {
+ border-bottom: 1px dotted #a4a5a6;
+ font-family: 'Proxima','ProximaNova','Helvetica','Verdana',sans-serif;
+ font-size: 23px;
+ font-weight: 600;
+ letter-spacing: 1px;
+ line-height: 23px;
+ padding-bottom: 20px;
+ padding-top: 17px;
+ text-transform: none;
+}
+
+#auth-container input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#auth-container input::-moz-placeholder {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#auth-container input:-moz-placeholder {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#auth-container input:-ms-input-placeholder {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#auth-container .box-container {
+  *zoom: 1;
+  padding-top: 1.5em;
+  width: 740px;
+  margin: 0 auto 3em;
+}
+
+#auth-container .box-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#auth-container .box-container .show-register {
+  display: none;
+}
+
+#auth-container .box-container .show-register a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #45555f;
+  font-family: 'Proxima', 'ProximaNova', 'Helvetica', 'Verdana', sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+#auth-container .box-container.hide-register {
+  width: 354px;
+}
+
+#auth-container .box-container.hide-register .boxed:last-child {
+  display: none;
+}
+
+#auth-container .box-container.hide-register .show-register {
+  display: block;
+  text-align: center;
+}
+
+#auth-container .boxed {
+  background-color: #fff;
+  border: 1px solid #a4a5a6;
+  padding: 21px;
+  min-height: 280px;
+  margin-bottom: 1em;
+  float: left;
+}
+
+#auth-container .boxed:first-child {
+  margin-right: 1em;
+}
+
+#auth-container .boxed:last-child {
+  margin-left: 1em;
+}
+
+#auth-container .boxed.dimmed .overlay h4 {
+  color: #ccc;
+}
+
+#auth-container .boxed:hover {
+  border: 2px solid #111;
+  padding: 20px;
+}
+
+#auth-container .boxed:hover .overlay h4 {
+  color: #00a2e1;
+}
+
+#auth-container .boxed .overlay {
+  cursor: pointer;
+  width: 310px;
+  height: 230px;
+}
+
+#auth-container .boxed .overlay h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 105px;
+  font-family: 'Proxima', 'ProximaNova', 'Helvetica', 'Verdana', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#auth-container .boxed .contents {
+  width: 310px;
+  display: none;
+}
+
+#auth-container .boxed .contents .popover-container {
+  width: 270px;
+  top: -82px;
+  left: 20px;
+  margin-bottom: -65px;
+}
+
+#auth-container .boxed .contents .popover-container .popover-contents {
+  width: auto;
+}
+
+#auth-container .boxed .contents>form {
+  margin: 0 auto;
+  width: 270px;
+}
+
+/* properly formats the Forgot password? field in the Log In box */
+#auth-container .boxed .contents>form .forgot-password-group {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 130px;
+  font-size: 10px;
+  float: right;
+  text-align: right;
+  margin-top: 7px;
+}
+
+#auth-container .boxed .contents>form .show-password-group {
+  width: 130px;
+  float: left;
+}
+
+#auth-container .boxed .contents>form label {
+  display: none;
+}
+
+#auth-container .boxed .contents>form label.checkbox {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* makes the Continue and Create My Account buttons fill proper entire width*/
+#auth-container .boxed .contents>form button.button {
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+#auth-container .boxed .contents h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1em;
+  letter-spacing: 2px;
+  font-family: 'Proxima','ProximaNova','Helvetica','Verdana',sans-serif;
+
+
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #00a2e1;
+  text-align: center;
+}
+
+#auth-container .boxed.active, #auth-container .hide-register .boxed {
+  border: 2px solid #111;
+  padding: 20px;
+}
+
+#auth-container .boxed.active .contents, #auth-container .hide-register .boxed .contents {
+  display: block;
+}
+
+#auth-container .boxed.active .overlay, #auth-container .hide-register .boxed .overlay {
+  display: none;
+}
+
+input[type="checkbox"] + label::before
+{
+   content: '';
+   display: inline-block;
+   position: relative;
+   top: 2px;
+   width: 14px;
+   height: 15px;
+   margin-right: 5px;
+   background: url("../img/checkbox-sprites.png") no-repeat 0 3px;
+}
+
+input[type="checkbox"]:checked + label::before
+{
+   background-position:0 -34px;
+}
+
+input[type='checkbox']+label
+{
+   position: relative;
+   font-size: 0.625rem;
+}
+
+input[type="checkbox"]+label, input[type="radio"]+label
+{
+   display: inline-block;
+   margin-left: 0.5rem;
+   margin-right: 1rem;
+   margin-bottom: 0;
+   vertical-align: baseline;
+}
+
+input[type='checkbox']
+{
+   position: absolute;
+   left: -9999px;
+   display: block;
+}
+
+input[type='text'], input[type='password'], input[type='date'], input[type='datetime'], input[type='datetime-local'], input[type='month'], input[type='week'], input[type='email'], input[type='number'], input[type='search'], input[type='tel'], input[type='time'], input[type='url'], button, select, textarea
+{
+   font-family: 'Proxima','ProximaNova','Helvetica','Verdana',sans-serif;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+   font-style: normal;
+}
+

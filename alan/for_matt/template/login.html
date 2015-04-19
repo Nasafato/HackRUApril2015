@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OneApp | Welcome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='foundation.css')}}"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css')}}"/>
+  <script src="{{ url_for('static', filename='modernizr.js')}}"</script>
+
+</head>
+
+
+<body>
+  <div class="fixed">
+    <nav class="top-bar" data-topbar="">
+      <section class="top-bar-section">
+        <ul class="left">
+          <li>
+            <div class="small-12 columns">
+              <a href="register.html" class="button radius">New Account</a> 
+            </div>
+          </li>
+        </ul>
+        <ul class="right">
+          <li class="has-form">
+          <form id="internSignin">
+            <div class="small-4 columns">
+              <input type="text" class="username" placeholder="username">
+            </div>
+            <div class="small-4 columns">
+              <input type="password" class="password" placeholder="password">
+            </div>
+            <div class="small-4 columns">
+              <input type="submit" value="Sign In" class="button radius" id="signin">
+            </div>
+          </form>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+  
+  <div id="footer">
+    <footer class="row">
+      <div class="large-12 columns">
+        <hr>
+        <div class="row">
+          <div class="large-6 columns">
+            <p>© Copyright Alan Gou</p>
+          </div>
+          <div class="large-6 columns">
+            <ul class="inline-list right">
+              <li><a href="#">Link 1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='jquery.js')}}"</script>
+  <script src="{{ url_for('static', filename='fastclick.js')}}"</script>
+  <script src="{{ url_for('static', filename='foundation.js')}}"</script>
+  <script src="{{ url_for('static', filename='foundation.topbar.js')}}"</script>
+  <script src="{{ url_for('static', filename='sendpassword.js')}}"</script>
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
