@@ -14,41 +14,32 @@
   <div class="fixed">
     <nav class="top-bar" data-topbar="">
       <section class="top-bar-section">
+        <ul class="left">
+          <li>
+            <div class="small-12 columns">
+              <a href="register.html" class="button radius">New Account</a> 
+            </div>
+          </li>
+        </ul>
         <ul class="right">
+          <li class="has-form">
+          <form id="signin">
             <div class="small-4 columns">
-              <input type="text" placeholder="username">
+              <input type="text" class="username" placeholder="username">
             </div>
             <div class="small-4 columns">
-              <input type="password" placeholder="password">
+              <input type="password" class="password" placeholder="password">
             </div>
             <div class="small-4 columns">
-              <a href="#" class="button radius">Sign In</a>
+              <input type="submit" value="Sign In" class="button radius" id="signin">
             </div>
+          </form>
+          </li>
         </ul>
       </section>
     </nav>
   </div>
   
-  <form>
-    <div class="row" id="registration">
-      <div class="large-6 columns">
-        <input type="text" placeholder="username">
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 columns">
-        <input type="password" placeholder="password">
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-6 columns">
-      <a href="#" class="button radius">Registration</a>
-      </div>
-    </div>
-  </form>
-
-
-
   <div id="footer">
     <footer class="row">
       <div class="large-12 columns">
@@ -71,6 +62,7 @@
   <script src="js/vendor/fastclick.js"></script>
   <script src="js/foundation/foundation.js"></script>
   <script src="js/foundation/foundation.topbar.js"></script>
+  <script src="js/sendpassword.js"></script>
 
   <script>
     $(document).foundation();
